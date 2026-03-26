@@ -1,0 +1,27 @@
+package com.demo;
+
+import java.util.Scanner;
+
+public class RemoveWhiteSpacesInString {
+
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter String:");
+		String str=sc.nextLine();
+		
+		
+		char s[]=str.toCharArray();
+		
+		String newString="";
+		for(int i=0;i<s.length;i++)
+		{
+		  if(s[i]!=' ')
+		  {
+			  newString+=s[i];
+		  }
+		}
+		
+		System.out.println(newString);
+	}
+}
